@@ -38,6 +38,7 @@ export default Ember.Component.extend({
   dragEnd: null,
   zoomin: null,
   zoomout: null,
+  data: null,
 
   //initialize cropper on did insert element
   initImageCropper: Ember.on('didRender', function() {
@@ -77,7 +78,9 @@ export default Ember.Component.extend({
         dragMove: _this.get('dragMove'),
         dragEnd: _this.get('dragEnd'),
         zoomin: _this.get('zoomin'),
-        zoomout: _this.get('zoomout')
+        zoomout: _this.get('zoomout'),
+        data: _this.get('data')
+
       });
   }),
 
